@@ -1,0 +1,21 @@
+@import "layout";
+@import "animations";
+
+.loading {
+	@include layout-sizing-fullpage;
+	@include layout-pos-floating(10);
+	
+	@include layout-center;
+
+	background-color: white;
+	font-size: 3em;
+
+	> .message {
+		> i {
+			@include anim-do-forever(spin, 1s, linear);
+			display: inline-block;
+		}
+		align-items: baseline;
+		
+	}
+}

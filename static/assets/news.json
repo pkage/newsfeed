@@ -1,0 +1,29 @@
+{
+	"api_key": "8fd04f5003ad42b4b74299b516bbdd3c",
+	"sources": [
+		"al-jazeera-english",
+		"bbc-news",
+		"cnn",
+		"bloomberg",
+		"business-insider",
+		"cnbc",
+		"engadget",
+		"espn",
+		"financial-times",
+		"focus",
+		"fortune",
+		"independent",
+		"national-geographic",
+		"newsweek",
+		"new-york-magazine",
+		"polygon",
+		"recode",
+		"reuters",
+		"the-economist",
+		"the-guardian-uk",
+		"the-new-york-times",
+		"the-wall-street-journal",
+		"the-washington-post",
+		"usa-today"
+	]
+}

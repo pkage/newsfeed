@@ -1,0 +1,34 @@
+@mixin layout-sizing-fullpage {
+	margin: 0;
+	border: 0;
+	padding: 0;
+
+	width: 100vw;
+	height: 100vh;
+}
+
+@mixin layout-flexbox {
+	display: flex;
+	flex-direction: row;
+}
+
+@mixin layout-center-horiz {
+	@include layout-flexbox;
+	justify-content: center;
+}
+
+@mixin layout-center-vert {
+	@include layout-flexbox;
+	align-items: center;
+}
+
+@mixin layout-center {
+	@include layout-center-horiz;
+	@include layout-center-vert;
+}
+
+@mixin layout-pos-floating($z-index) {
+	position: fixed;
+	z-index: $z-index;
+}
+
