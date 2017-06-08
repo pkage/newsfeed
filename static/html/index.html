@@ -14,14 +14,17 @@
 				</div>
 			</div>
 
-			<div class="article">
+			<a class="article" :href="showing.url" target="blank">
 				<div class="background">
 					<div class="background-image"></div>
 					<div class="background-transition"></div>
-				</div>"
+				</div>
 				<div class="foreground">
-					<div class="headline"></div>
-					<div class="description"></div>
+					<div class="source">[{{ formatSource(showing.source) }}]</div><br>
+					<div class="headline">{{showing.title}}</div><br>
+					<template v-for="line in formatLines(showing.description, 50)">
+						<div class="description">{{ line }}</div><br>
+					</template>
 				</div>
 			</div>
 		</div>

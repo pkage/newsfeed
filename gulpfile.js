@@ -20,7 +20,7 @@ gulp.task('compilehtml', function(cb) {
 			'!src/html/*.frag'
 		]),
 		preprocess(),
-		gulp.dest('static/html/'),
+		gulp.dest('static/'),
 		livereload()
 	], cb);
 });

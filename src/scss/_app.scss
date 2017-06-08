@@ -1,0 +1,41 @@
+.foreground {
+	position: absolute;
+	top: 60vh;
+	left: 3rem;
+
+	font-size: 1.4em;
+
+	> .headline {
+		display: inline-block;
+		background-color: black;
+		color: white;
+		padding: 0 0.2em 0 0.2em;
+		font-size: 1.5em;
+	}
+
+	> .description {
+		display: inline-block;
+		background-color: white;
+		color: black;
+
+		max-width: 60vw;
+		
+		padding: 0 0.2em 0 0.2em;
+	}
+
+	> .source {
+		display: inline-block;
+		background-color: white;
+		color: black;
+
+		text-transform: capitalize;
+		padding: 0 0.2em 0 0.2em;
+	}
+}
+
+.background {
+	> .background-image {
+		@include layout-sizing-fullpage;
+		background-size: cover;
+	}
+}
